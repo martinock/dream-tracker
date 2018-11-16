@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320DBF4FE6F2CD0F420E155B /* Pods_DreamTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67946D0006B89CED9A12D986 /* Pods_DreamTracker.framework */; };
+		CB293013219E56900000BC1E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB293012219E56900000BC1E /* RegisterViewController.swift */; };
+		CB293015219E57E20000BC1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB293014219E57E20000BC1E /* LoginViewController.swift */; };
 		F96B441821492B2500FDFD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B441721492B2500FDFD60 /* AppDelegate.swift */; };
 		F96B441A21492B2500FDFD60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B441921492B2500FDFD60 /* ViewController.swift */; };
 		F96B441D21492B2500FDFD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96B441B21492B2500FDFD60 /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67946D0006B89CED9A12D986 /* Pods_DreamTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C248EBEBA2711F71C71A527 /* Pods-DreamTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		CB293012219E56900000BC1E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CB293014219E57E20000BC1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD7CFDED9CD736729A3EC9A7 /* Pods-DreamTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker.release.xcconfig"; sourceTree = "<group>"; };
 		F96B441421492B2500FDFD60 /* DreamTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96B441721492B2500FDFD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96B441921492B2500FDFD60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320DBF4FE6F2CD0F420E155B /* Pods_DreamTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6921854BD04AA0E90531D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C248EBEBA2711F71C71A527 /* Pods-DreamTracker.debug.xcconfig */,
+				CD7CFDED9CD736729A3EC9A7 /* Pods-DreamTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D129D91C87499B0CB9D553B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67946D0006B89CED9A12D986 /* Pods_DreamTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F96B440B21492B2500FDFD60 = {
 			isa = PBXGroup;
 			children = (
 				F96B441621492B2500FDFD60 /* DreamTracker */,
 				F96B441521492B2500FDFD60 /* Products */,
+				A6921854BD04AA0E90531D1C /* Pods */,
+				D129D91C87499B0CB9D553B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				F96B441E21492B2700FDFD60 /* Assets.xcassets */,
 				F96B442021492B2700FDFD60 /* LaunchScreen.storyboard */,
 				F96B442321492B2700FDFD60 /* Info.plist */,
+				CB293012219E56900000BC1E /* RegisterViewController.swift */,
+				CB293014219E57E20000BC1E /* LoginViewController.swift */,
 			);
 			path = DreamTracker;
 			sourceTree = "<group>";
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F96B442621492B2700FDFD60 /* Build configuration list for PBXNativeTarget "DreamTracker" */;
 			buildPhases = (
+				A9948D8AD534EFEDF7040903 /* [CP] Check Pods Manifest.lock */,
 				F96B441021492B2500FDFD60 /* Sources */,
 				F96B441121492B2500FDFD60 /* Frameworks */,
 				F96B441221492B2500FDFD60 /* Resources */,
+				A3FA691CE89D60C0A1E88D20 /* [CP] Embed Pods Frameworks */,
+				A0E065F9126418DA06A06449 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +163,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0E065F9126418DA06A06449 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3FA691CE89D60C0A1E88D20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9948D8AD534EFEDF7040903 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F96B441021492B2500FDFD60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB293015219E57E20000BC1E /* LoginViewController.swift in Sources */,
+				CB293013219E56900000BC1E /* RegisterViewController.swift in Sources */,
 				F96B441A21492B2500FDFD60 /* ViewController.swift in Sources */,
 				F96B441821492B2500FDFD60 /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +379,7 @@
 		};
 		F96B442721492B2700FDFD60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C248EBEBA2711F71C71A527 /* Pods-DreamTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +398,7 @@
 		};
 		F96B442821492B2700FDFD60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7CFDED9CD736729A3EC9A7 /* Pods-DreamTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
