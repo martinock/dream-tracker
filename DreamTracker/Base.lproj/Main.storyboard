@@ -87,9 +87,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="idM-4P-ogs"/>
-                    <connections>
-                        <outlet property="password" destination="RZM-sL-axs" id="F4T-l5-8RR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
