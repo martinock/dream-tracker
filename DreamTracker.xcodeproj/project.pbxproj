@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C372339032F810C79F147BDB /* Pods_DreamTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB475AA504EF8D269CF2BF85 /* Pods_DreamTracker.framework */; };
 		E51FA42721B6F70300B64765 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51FA42621B6F70300B64765 /* LoginResponse.swift */; };
+		E5BB643121B82FD600E724D5 /* DreamListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB643021B82FD600E724D5 /* DreamListController.swift */; };
 		F96B441821492B2500FDFD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B441721492B2500FDFD60 /* AppDelegate.swift */; };
 		F96B441A21492B2500FDFD60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B441921492B2500FDFD60 /* ViewController.swift */; };
 		F96B441D21492B2500FDFD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96B441B21492B2500FDFD60 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		AB475AA504EF8D269CF2BF85 /* Pods_DreamTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7CCA7D50A41B7DF6AC0381 /* Pods-DreamTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker.release.xcconfig"; sourceTree = "<group>"; };
 		E51FA42621B6F70300B64765 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		E5BB643021B82FD600E724D5 /* DreamListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListController.swift; sourceTree = "<group>"; };
 		F96B441421492B2500FDFD60 /* DreamTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96B441721492B2500FDFD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96B441921492B2500FDFD60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				F96B441721492B2500FDFD60 /* AppDelegate.swift */,
 				F96B441921492B2500FDFD60 /* ViewController.swift */,
 				F96B441B21492B2500FDFD60 /* Main.storyboard */,
+				E5BB643021B82FD600E724D5 /* DreamListController.swift */,
 				F96B441E21492B2700FDFD60 /* Assets.xcassets */,
 				F96B442021492B2700FDFD60 /* LaunchScreen.storyboard */,
 				F96B442321492B2700FDFD60 /* Info.plist */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96B441A21492B2500FDFD60 /* ViewController.swift in Sources */,
+				E5BB643121B82FD600E724D5 /* DreamListController.swift in Sources */,
 				F96B441821492B2500FDFD60 /* AppDelegate.swift in Sources */,
 				E51FA42721B6F70300B64765 /* LoginResponse.swift in Sources */,
 			);

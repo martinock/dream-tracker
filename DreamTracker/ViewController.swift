@@ -57,8 +57,6 @@ class ViewController: UIViewController {
                                     do {
                                         let mappedResponse = try jsonDecoder.decode(LoginData.self, from: data)
                                         if (mappedResponse.success) {
-                                            print(mappedResponse.data?.token ?? "token");
-                                            
                                             //Store token in userDefault
                                             let userDefault = UserDefaults.standard;
                                             userDefault.set(mappedResponse.data?.token, forKey: "token")
@@ -98,7 +96,7 @@ class ViewController: UIViewController {
             return isLoginValid
         
         default:
-            return false
+            return true
             //do nothing
         }
     }

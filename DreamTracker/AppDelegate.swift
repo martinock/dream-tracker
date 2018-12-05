@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let userDefault = UserDefaults.standard
+        if userDefault.string(forKey: "token") != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let dreamTrackerVC = storyboard.instantiateViewController(withIdentifier: "DreamTrackerNavigationController")
+            window?.rootViewController = dreamTrackerVC
+        }
         return true
     }
 
