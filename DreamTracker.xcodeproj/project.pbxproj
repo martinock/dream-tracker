@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		C372339032F810C79F147BDB /* Pods_DreamTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB475AA504EF8D269CF2BF85 /* Pods_DreamTracker.framework */; };
 		E51FA42721B6F70300B64765 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51FA42621B6F70300B64765 /* LoginResponse.swift */; };
+		E55507A921BD65410070B86C /* TodoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55507A821BD65410070B86C /* TodoViewCell.swift */; };
+		E55507AB21BD66660070B86C /* DreamListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55507AA21BD66660070B86C /* DreamListController.swift */; };
+		E55507AD21BD67E40070B86C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55507AC21BD67E40070B86C /* ViewController.swift */; };
 		E5DD40B121BC2445005FA8DA /* DreamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DD40B021BC2445005FA8DA /* DreamResponse.swift */; };
-		E5DD40B921BC398C005FA8DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DD40B821BC398C005FA8DA /* ViewController.swift */; };
-		E5DD40BB21BC3997005FA8DA /* DreamTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DD40BA21BC3997005FA8DA /* DreamTrackerViewController.swift */; };
 		E5DD40BD21BC39CE005FA8DA /* DreamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DD40BC21BC39CE005FA8DA /* DreamViewCell.swift */; };
 		E5DD40C021BC4158005FA8DA /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DD40BF21BC4158005FA8DA /* UIImageViewExtension.swift */; };
 		F96B441821492B2500FDFD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B441721492B2500FDFD60 /* AppDelegate.swift */; };
@@ -25,9 +26,10 @@
 		AB475AA504EF8D269CF2BF85 /* Pods_DreamTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7CCA7D50A41B7DF6AC0381 /* Pods-DreamTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamTracker/Pods-DreamTracker.release.xcconfig"; sourceTree = "<group>"; };
 		E51FA42621B6F70300B64765 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		E55507A821BD65410070B86C /* TodoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewCell.swift; sourceTree = "<group>"; };
+		E55507AA21BD66660070B86C /* DreamListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListController.swift; sourceTree = "<group>"; };
+		E55507AC21BD67E40070B86C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5DD40B021BC2445005FA8DA /* DreamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamResponse.swift; sourceTree = "<group>"; };
-		E5DD40B821BC398C005FA8DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
-		E5DD40BA21BC3997005FA8DA /* DreamTrackerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DreamTrackerViewController.swift; path = ../../../../.Trash/DreamTrackerViewController.swift; sourceTree = "<group>"; };
 		E5DD40BC21BC39CE005FA8DA /* DreamViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamViewCell.swift; sourceTree = "<group>"; };
 		E5DD40BF21BC4158005FA8DA /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		F96B441421492B2500FDFD60 /* DreamTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +73,8 @@
 		E5DD40B221BC3649005FA8DA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E5DD40B821BC398C005FA8DA /* ViewController.swift */,
-				E5DD40BA21BC3997005FA8DA /* DreamTrackerViewController.swift */,
+				E55507AA21BD66660070B86C /* DreamListController.swift */,
+				E55507AC21BD67E40070B86C /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E5DD40BC21BC39CE005FA8DA /* DreamViewCell.swift */,
+				E55507A821BD65410070B86C /* TodoViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -257,10 +260,11 @@
 			files = (
 				F96B441821492B2500FDFD60 /* AppDelegate.swift in Sources */,
 				E5DD40C021BC4158005FA8DA /* UIImageViewExtension.swift in Sources */,
-				E5DD40BB21BC3997005FA8DA /* DreamTrackerViewController.swift in Sources */,
+				E55507AB21BD66660070B86C /* DreamListController.swift in Sources */,
 				E5DD40BD21BC39CE005FA8DA /* DreamViewCell.swift in Sources */,
 				E5DD40B121BC2445005FA8DA /* DreamResponse.swift in Sources */,
-				E5DD40B921BC398C005FA8DA /* ViewController.swift in Sources */,
+				E55507A921BD65410070B86C /* TodoViewCell.swift in Sources */,
+				E55507AD21BD67E40070B86C /* ViewController.swift in Sources */,
 				E51FA42721B6F70300B64765 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
